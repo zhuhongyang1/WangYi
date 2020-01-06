@@ -15,6 +15,9 @@ export default {
             path: '/main/home',
             component: ()=><p>首页</p>
         },{
+            path: '/main/type',
+            component: ()=><p>专题</p>
+        },{
             path: '/main/classify',
             component: ()=><p>分类</p>
         },{

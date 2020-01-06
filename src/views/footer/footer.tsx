@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom'
 import './footer.css'
 import './iconfont/iconfont.css'
 export interface FooterOption {
@@ -15,7 +16,7 @@ export interface FooterOption {
     // className?: string;
 }
 
-export default class Button extends React.Component<FooterOption, any>{
+export default class footer extends React.Component<FooterOption, any>{
     static defaultProps = {
         // defalutCls: 'keep-btn',
         // loading: false,
@@ -24,30 +25,42 @@ export default class Button extends React.Component<FooterOption, any>{
     }
     constructor(props: FooterOption) {
         super(props);
-
     }
     render() {
         return <footer>
-            <dl>
-                <dt><i className='iconfont icon-caidaniconshouyehui'></i></dt>
-                <dd>首页</dd>
-            </dl>
-            <dl>
-                <dt><i className='iconfont icon-icon_clone'></i></dt>
-                <dd>专题</dd>
-            </dl>
-            <dl>
-                <dt><i className='iconfont icon-icon-'></i></dt>
-                <dd>分类</dd>
-            </dl>
-            <dl>
-                <dt><i className='iconfont icon-icon_cart'></i></dt>
-                <dd>购物车</dd>
-            </dl>
-            <dl>
-                <dt><i className='iconfont icon-icon-mine'></i></dt>
-                <dd>我的</dd>
-            </dl>
+            <NavLink to='/main/home'>
+                <dl>
+                    <dt><i className='iconfont icon-caidaniconshouyehui'></i></dt>
+                    <dd>首页</dd>
+                </dl>
+            </NavLink>
+            <NavLink to='/main/type'>
+                <dl>
+                    <dt><i className='iconfont icon-icon_clone'></i></dt>
+                    <dd>专题</dd>
+                </dl>
+            </NavLink>
+            <NavLink to='/main/classify'>
+                <dl>
+                    <dt><i className='iconfont icon-icon-'></i></dt>
+                    <dd>分类</dd>
+                </dl>
+            </NavLink>
+            <NavLink to='/main/cart'>
+                <dl>
+                    <dt><i className='iconfont icon-icon_cart'></i></dt>
+                    <dd>购物车</dd>
+                </dl>
+            </NavLink>
+            <NavLink to='/main/my'>
+                <dl>
+                    <dt><i className='iconfont icon-icon-mine'></i></dt>
+                    <dd>我的</dd>
+                </dl>
+            </NavLink>
+
+
+
         </footer>
     }
 }

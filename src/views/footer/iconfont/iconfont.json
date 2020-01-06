@@ -1,0 +1,44 @@
+{
+  "id": "1598768",
+  "name": "w'y",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "569522",
+      "name": "菜单icon_首页-灰",
+      "font_class": "caidaniconshouyehui",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "4753437",
+      "name": "icon_cart",
+      "font_class": "icon_cart",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "5699784",
+      "name": "icon_menu",
+      "font_class": "icon-",
+      "unicode": "e6f9",
+      "unicode_decimal": 59129
+    },
+    {
+      "icon_id": "6829646",
+      "name": "icon-mine",
+      "font_class": "icon-mine",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "12297499",
+      "name": "icon_clone",
+      "font_class": "icon_clone",
+      "unicode": "e865",
+      "unicode_decimal": 59493
+    }
+  ]
+}

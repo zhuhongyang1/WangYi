@@ -1,6 +1,6 @@
 import React from 'react'
 import RouterView from './RouterView'
-
+import Footer from '../views/footer/footer'
 export default {
     routes: [{
         path: '/login',
@@ -8,7 +8,7 @@ export default {
     },{
         path: '/main',
         component: (props:any)=>(<>
-            <p>主页面</p>
+            <Footer/>
             <RouterView routes={props.routes}></RouterView>
         </>),
         children: [{

@@ -1,7 +1,6 @@
-import React from 'react'
-// 导入store
-import Cart from './cart'
-
+import Zhuanti from './modules/zhuanti'
+import Detail from './modules/detail'
 export default {
-    cart: new Cart()
+    Zhuanti:new Zhuanti(),
+    Detail:new Detail()
 }

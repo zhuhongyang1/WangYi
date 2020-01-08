@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom'
-import './footer.css'
+import './footer.module.scss'
 import './iconfont/iconfont.css'
 export interface FooterOption {
     // text?: string;
@@ -17,15 +17,15 @@ export interface FooterOption {
 }
 
 export default class footer extends React.Component<FooterOption, any>{
-    static defaultProps = {
+    // static defaultProps = {
         // defalutCls: 'keep-btn',
         // loading: false,
         // type: 'default',
         // size: 'xm'
-    }
-    constructor(props: FooterOption) {
-        super(props);
-    }
+    // }
+    // constructor(props: FooterOption) {
+    //     super(props);
+    // }
     render() {
         return <footer>
             <NavLink to='/main/home'>
@@ -34,7 +34,7 @@ export default class footer extends React.Component<FooterOption, any>{
                     <dd>首页</dd>
                 </dl>
             </NavLink>
-            <NavLink to='/main/type'>
+            <NavLink to='/main/type' >
                 <dl>
                     <dt><i className='iconfont icon-icon_clone'></i></dt>
                     <dd>专题</dd>
@@ -58,8 +58,6 @@ export default class footer extends React.Component<FooterOption, any>{
                     <dd>我的</dd>
                 </dl>
             </NavLink>
-
-
 
         </footer>
     }

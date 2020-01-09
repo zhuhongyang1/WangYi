@@ -3,6 +3,9 @@ import RouterView from './RouterView'
 import Footer from '../views/footer/footer'
 import Zt from '../views/zhuanti/zt'
 import Detail from '../views/detail/detail'
+import My from '../views/my/my'
+import Collect from '../views/collect/collect'
+import Address from '../views/address/address'
 export default {
     routes: [{
         path: '/login',
@@ -27,13 +30,19 @@ export default {
             component: ()=><p>购物车</p>
         },{
             path: '/main/my',
-            component: ()=><p>我的</p>
+            component: My
         }]
+    },{
+        path: '/collect',
+        component: Collect
+    },{
+        path: '/address',
+        component: Address
     },{
         path: '/topicDetail',
         component: Detail
     },{
-        from: '*',
+        from: '/',
         to: '/login'
     }]
 }

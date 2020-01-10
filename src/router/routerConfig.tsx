@@ -6,6 +6,7 @@ import Detail from '../views/detail/detail'
 import My from '../views/my/my'
 import Collect from '../views/collect/collect'
 import Address from '../views/address/address'
+import Goods from '../views/goods/goods'
 export default {
     routes: [{
         path: '/login',
@@ -35,6 +36,9 @@ export default {
     },{
         path: '/collect',
         component: Collect
+    },{
+        path: '/goods',
+        component: Goods
     },{
         path: '/address',
         component: Address

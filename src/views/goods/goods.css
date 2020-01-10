@@ -1,0 +1,93 @@
+.box{
+    width: 100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.box .header{
+    width: 100%;
+    height:50px;
+    line-height: 50px;
+    border-bottom: solid 4px #ccc;
+    display: flex;
+}
+.box .header .left{
+    flex:1;
+    font-size: 25px;
+    margin:0 10px;
+}
+.box .header .right{
+    flex:3;
+    font-weight: 600;
+}
+.box .main{
+    flex:1;
+    width: 100%;
+    overflow: auto;
+}
+.box .main .banners{
+    width: 100%;
+    height:350px;
+}
+.box .main .banners img{
+    width: 100%;
+    height:100%;
+}
+.box .main ul{
+    width: 100%;
+    height:40px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 14px;
+    line-height: 40px;
+    background:#eee;
+}
+.box .main ul li span{
+    color:#f33;
+}
+.box .main .title{
+    width: 100%;
+    height:140px;
+    text-align: center;
+    border-bottom: solid 1px #ccc;
+}
+.box .main .title h4{
+    line-height: 50px;
+}
+.box .main>.title>p:nth-child(1){
+    line-height: 50px;
+}
+.box .main>.title>p:nth-child(3){
+    line-height: 50px;
+    color:red;
+}
+.box .main .mark{
+    width: 100%;
+    height:50px;
+    line-height: 50px;
+}
+.box .main .clear{
+    width: 100%;
+    height:10px;
+    background:#ccc;
+}
+.box .bottom{
+    width: 100%;
+    height:50px;
+    line-height: 50px;
+    border-top:solid 1px #ccc;
+    display: flex;
+    
+}
+.wrap .bottom .xing{
+    width: 75px;
+    height:50px;
+    font-size: 20px;
+}
+.wrap .bottom .addCart{
+    flex:2;
+    width: 100%;
+    height:100%;
+    background: #ff9500;
+}

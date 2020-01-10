@@ -24,6 +24,9 @@ let Collect: React.FC<PropsType> = (props) =>{
     let tuichu = () => {
         props.history.go(-1)
     }
+    let goGoods = (id:any) => {
+        props.history.push('/goods/'+ id)
+    }
 
         return useObserver(() => (
             <div className="wrap">
@@ -34,7 +37,7 @@ let Collect: React.FC<PropsType> = (props) =>{
                 <div className="main">
                     {
                         Collect.list.map((item,index) => {
-                        return <div className="block" key={index}>
+                        return <div className="block" key={index} onClick={()=>goGoods(item.value_id)}>
                             <div className="left">
                                 <img src={item.list_pic_url} alt=""/>
                             </div>
